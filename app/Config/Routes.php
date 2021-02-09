@@ -32,10 +32,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('/conductores', 'APIController::index');
-$routes->post('/conductores/nuevo', 'APIController::registrarConductor');
-$routes->put('/conductores/editar/(:any)', 'APIController::editarConductor/$1');
-$routes->delete('/conductores/eliminar/(:any)', 'APIController::eliminarConductor/$1');
+$routes->get('/animal', 'APIController::index');
+$routes->post('/animal/nuevo', 'APIController::registrarAnimal');
+$routes->put('/animal/editar/(:any)', 'APIController::editarAnimal/$1');
+$routes->delete('/animal/eliminar/(:any)', 'APIController::eliminarAnimal/$1');
 
 /**
  * --------------------------------------------------------------------

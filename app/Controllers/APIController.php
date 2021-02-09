@@ -35,7 +35,7 @@ class APIController extends ResourceController{
         );
 
         //3. Ejecutamos validacion y agregamos el registro
-        if($this->validate('animales')){
+        if($this->validate('animal')){
             
             $this->model->insert($datosEnvio);
             $mensaje=array('estado'=>true,'mensaje'=>"registro agregado con exito");
@@ -72,7 +72,7 @@ class APIController extends ResourceController{
         );
 
         //4. Validamos y ejecutamos la operación en BD
-        if($this->validate('animalesPUT')){
+        if($this->validate('animalPUT')){
             
             $this->model->update($id,$datosEnvio);
             $mensaje=array('estado'=>true,'mensaje'=>"registro editado con exito");

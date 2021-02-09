@@ -30,19 +30,25 @@ class Validation
 		'single' => 'CodeIgniter\Validation\Views\single',
 	];
 
-	public $conductores=[
+	public $animal=[
 
-		'idConductor'=>'required',
+		'idAnimal'=>'required',
 		'nombre'=>'required',
-		'telefono'=>'required',
-		'idContrato'=>'required'
+		'edad'=>'required',
+		'tipo'=>'required',
+		'descripcion'=>'required',
+		'comida'=>'required'
 
 	];
 
-	public $conductoresPUT=[
+	public $animalPUT=[
 
 		'nombre'=>'required',
-		'telefono'=>'required'
+		'edad'=>'required',
+		'tipo'=>'required',
+		'descripcion'=>'required',
+		'comida'=>'required'
+
 
 	];
 
